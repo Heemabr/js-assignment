@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>assignment</title>
+ </head>
+ <body>
+ <p>string methods</p>
+ <script>
+	let str="     Today's class is awesome and easy to learn javascript    ";
+	let a="ab";
+	let b="cd";
+	
+	console.log(str);
+	//properties
+	//constructor is used to return function-created the function prototype
+	console.log(str.constructor);
+	//returns length of the string
+	console.log(str.lenght);
+	console.log(str);
+	//methods
+	//return the character in the specified index
+	console.log(str.charAt(9));
+	//return the ascii value for specified index
+	console.log(str.charCodeAt(0));
+	//to concate 2 string
+	let c=console.log(a.concat(b));
+	//to check whether the string ends with that text
+	console.log(str.endsWith("javascript"));
+	console.log(str.endsWith("java"));
+	//check whether the string contain the specified word
+	console.log(str.includes("class"));
+	console.log(str.indexOf("a"));
+	//compare 2 strings
+	console.log(a.localeCompare(b));
+	//match the repeated word
+	console.log(str.match(/as/g));
+	//to repeat the string for n o.of times
+	console.log(str.repeat(6));
+	//search the word and reurn the position
+	console.log(str.search("easy"));
+	//return the string with the mentioned position
+	console.log(str.slice(0,19));
+	//split the character in the sring
+	console.log(str.split(""));
+	//check whether the string starts with
+	console.log(str.startsWith("today"));
+	//to get the specified position from the string
+	console.log(str.substr(3,15));
+	console.log(str.substring(3,15));
+	//display the string
+	console.log(str.toString());
+	//replace the string
+	console.log(str.replace("class","live"));
+	//remove blankspaces
+	alert(str.trim());
+	console.log(str.valueOf());
+					
+	
+	
+	
+ </script>
+   
+ </body>
+</html>
