@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>console</title>
+ </head>
+ <body>
+ <h3>various methods in console function</h3>
+ <script>
+ //to calculate time taken
+		console.time('time taken');
+		//to display message
+        console.log("good evening");
+		//to display error message
+		console.error("there is an error in your program");
+		//to display warning
+		console.warn("you got one error");
+		var a={sno:1,name:"heema",mark:78};
+		var b={sno:2,name:"aisu",mark:98};
+		var c={sno:3,name:"priya",mark:58};	
+		//to display the datas in table form
+		console.table({a,b,c});
+		//to display the message using css
+		console.log("%c hello everybody","color:green");
+		//to display the time taken 
+		console.timeEnd('time taken');
+ </script>
+   
+ </body>
+</html>
