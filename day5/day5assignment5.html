@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>assignment</title>
+ </head>
+ <body>
+   <script>
+    let sale=prompt("enter your sales");
+	if(sale>=0 && sale<=5000)
+	{
+	let tc=sale*0.02;
+	console.log(`total comission is Rs.${tc}/-`);
+	}
+	if(sale>5000 && sale<=10000)
+	{
+	let tc=(5000*0.02)+((sale-5000)*0.05);
+		console.log(`total comission is Rs.${tc}/-`);
+	}
+	if(sale>10000 && sale<=20000)
+	{
+	let tc=(5000*0.02)+((5000)*0.05)+((sale-10000)*0.07);
+		console.log(`total comission is Rs.${tc}/-`);
+	}
+	if(sale>20000)
+	{
+	let tc=(5000*0.02)+((5000)*0.05)+((10000)*0.07)+((sale-20000)*0.1);
+		console.log(`total comission is Rs.${tc}/-`);
+	}
+	
+   </script>
+ </body>
+</html>

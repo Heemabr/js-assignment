@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>day5assignment4</title>
+ </head>
+ <body>
+   <script>
+      console.log("calculator");
+	  let a=+prompt("enter operand1");
+	  console.log(a);
+	  let b=+prompt("enter operand2");
+	  console.log(b);
+	  let c=prompt("enter operation");
+	  console.log(c);
+	  if(c =='+')
+	  { 
+	  let d=a + b;
+	  console.log(d);
+	  }
+	  else if(c == '-')
+	  {
+	  let d=a-b;
+	  console.log(d);
+	  }
+	   else if(c == '*')
+	  {
+	  let d=a*b;
+	  console.log(d);
+	  }
+	   else if(c == '/')
+	  {
+	  let d=a/b;
+	  console.log(d);
+	  }
+	   else if(c == '%')
+	  {
+	  let d=a%b;
+	  console.log(d);
+	  }
+	   else if(c == 'sq')
+	  {
+	  let d=Math.sqrt(a)
+	  console.log(d);
+	  }
+	  else if(c == 'per')
+	  {
+	  let d=((a/100)*100)
+	  console.log(d);
+	  }
+	  else 
+	  { console.log("enter correct operation");}
+   </script>
+ </body>
+</html>
