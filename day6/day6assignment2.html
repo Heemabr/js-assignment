@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Day5 assignment 1</title>
+ </head>
+ <body>
+   <script>
+   class User {
+    constructor(name, age,email) {
+      this.name = name;
+      this.age = age;
+      this.email = email;
+      this.luCoins = 0;
+      this.courses = [];
+    }
+	login(){
+        console.log(`${this.name} has logged in`);
+        return this;
+    }
+    logout(){
+        console.log(`${this.name} has logged out`);
+        return this;
+    }
+	  addCoins(){
+        this.luCoins++;
+        console.log(`${this.name} has ${this.luCoins} coins`);
+        return this;
+    }
+	 removeCoins(){
+        this.luCoins--;
+        console.log(`${this.name} has ${this.luCoins} coins`);
+        return this;
+    }
+}
+
+class Moderator extends User{
+	
+}
+
+class Admin extends Moderator{
+   addCourse(user,course){
+       user.courses.push(course);
+       console.log(user);
+   }
+     removeCourse(user,course){
+      var index=user.courses.indexOf(course);
+	  user.courses.splice(index,1);
+	  console.log(user);
+   }
+}
+
+
+let user1 = new User('heema',21,'brheema1999@gmail.com')
+let user2 = new User('aisu',22,'aisu@gmai.com')
+let user3 = new User('yami',20,'yami@gmai.com')
+let mod = new Moderator('priya',24,'priya@gmail.com');
+let admin = new Admin('mani',25,'mani@gmail.com');
+let users = [user1,user2,user3,mod,admin];
+
+users.map(el => {
+  console.log(el);
+});
+user1.login();
+user1.addCoins();
+user1.addCoins();
+user1.addCoins();
+user1.removeCoins();
+admin.addCourse(user1,'Js');
+admin.addCourse(user1,'Python');
+admin.removeCourse(user1,'python');
+</script>
+</body>
+</html>
