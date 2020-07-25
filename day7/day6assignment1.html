@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>day3 assignment</title>
+ </head>
+ <body id="background">
+ <h1>hello everyone</h1>
+ 
+ <script>
+
+
+var i = 0;
+function change() {
+  let doc = document.getElementById("background");
+  let color = ["red","yellow","green","wheat","black"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 3000);
+</script>
+   
+ </body>
+</html>

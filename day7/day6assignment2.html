@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>day3 assignment</title>
+ </head>
+
+<head>
+<script>
+			function printTable(){
+				
+				let num=document.getElementById('Number').value;
+				for(let i=1; i<=12; i++){
+					let tab= document.getElementById('Print');
+					tab.innerHTML += (num*i) + "<br/>" 
+				}
+			}
+		</script>
+	</head>
+
+	<body style="text-align: center;">
+		<p><input type="text" id="Number" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print" onclick='printTable()'/>
+		<p id="Print"></p>
+
+   
+ </body>
+</html>

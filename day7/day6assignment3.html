@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>day6 assignment</title>
+ </head>
+ <body>
+ <h1 id="name"></h1>      
+ <button id="dark">Switch to Dark Mode</button> <br><br>
+  <button id="normal">Switch to normal Mode</button>
+ <h4 id="time"></h4>
+ 
+ <script>
+console.log("DOM Basics");
+let name=prompt("enter your name",'stranger');
+let a=document.getElementById("name");
+a.innerText +=`welcome ${name}`;
+const dmode = document.getElementById('dark');
+
+dmode.onclick = function changeColor(){
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+   }
+   const nmode = document.getElementById('normal');
+   nmode.onclick = function changeColor(){
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = 'black';
+   }
+
+
+const ctime = document.getElementById('time');
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+setInterval(clock,1000);
+
+ </script>
+   
+ </body>
+</html>
